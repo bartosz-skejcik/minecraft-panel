@@ -10,8 +10,8 @@ export async function POST(req: Request) {
         data: {
             name,
             uuid,
-            globalTime,
-            localTime,
+            globalTime: globalTime.toString(),
+            localTime: localTime.toString(),
         },
     });
 

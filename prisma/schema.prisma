@@ -18,3 +18,20 @@ model joinLog {
   globalTime String
   localTime  String
 }
+
+model quitLog {
+  id         Int      @id @default(autoincrement())
+  name       String
+  uuid       String
+  globalTime String
+  localTime  String
+}
+
+model chatLog {
+  id         Int      @id @default(autoincrement())
+  name       String
+  uuid       String
+  globalTime String
+  localTime  String
+  message    String
+}
